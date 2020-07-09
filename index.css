@@ -1,0 +1,8 @@
+.greeting,
+.greetingUser {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
