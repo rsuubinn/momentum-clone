@@ -26,14 +26,18 @@
   margin: 0 auto;
   margin-bottom: 30px;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1.5s linear;
+  animation: fadeIn 1s linear;
 }
+
 html {
   height: 100%;
 }
-
 body {
+  font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #242a2e;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,14 +55,29 @@ body {
   animation: fadeIn 0.5s linear;
 }
 
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
 .weather {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 10px 20px 0px 0px;
   color: white;
 }
 
 .temperature {
+  display: flex;
+  justify-content: flex-end;
   font-size: 25px;
 }
 
@@ -98,7 +117,7 @@ body {
 
 .toDoForm-input {
   border: none;
-  margin: 0;
+  margin-top: 20px;
   background: transparent;
   text-align: center;
   font-size: 45px;
@@ -107,11 +126,6 @@ body {
   cursor: text;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid white;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
 }
 
 input:focus {
@@ -135,12 +149,13 @@ input:focus {
 
 .clock-title {
   font-size: 150px;
-  font-weight: bold;
+  font-weight: 550;
 }
 
 .greetingUser {
-  margin: -60px 0px 0px 0px;
+  margin: -40px 0px 0px 0px;
   font-size: 50px;
+  font-weight: 500;
 }
 
 .delBtn {
