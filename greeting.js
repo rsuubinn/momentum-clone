@@ -1,6 +1,8 @@
 const greetingForm = document.querySelector(".js-greeting"),
   greetingInput = greetingForm.querySelector("input"),
-  greetingUser = document.querySelector(".js-greetingUser");
+  greetingUser = document.querySelector(".js-greetingUser"),
+  jsToDoForm = document.querySelector(".js-toDoForm"),
+  jsClock = document.querySelector(".js-clock");
 
 const USER_LS = "currentUser",
   SHOWING_CN = "showing";
@@ -12,6 +14,8 @@ function saveUser(text) {
 function paintUser(text) {
   greetingForm.classList.remove(SHOWING_CN);
   greetingUser.classList.add(SHOWING_CN);
+  jsToDoForm.classList.add(SHOWING_CN);
+  jsClock.classList.add(SHOWING_CN);
   greetingUser.innerText = `Hello, ${text}`;
 }
 
