@@ -7,15 +7,6 @@
   }
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
 .greeting,
 .greetingUser,
 .clock,
@@ -35,7 +26,102 @@
   margin: 0 auto;
   margin-bottom: 30px;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1s linear;
+  animation: fadeIn 1.5s linear;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  color: white;
+}
+
+.temperature {
+  font-size: 25px;
+}
+
+.place {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.greeting-title {
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+.toDoForm-title {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: -10px;
+}
+
+.greeting-input {
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  cursor: text;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid white;
+  margin-bottom: 50px;
+}
+
+.toDoForm-input {
+  border: none;
+  margin: 0;
+  background: transparent;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 500;
+  color: white;
+  cursor: text;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid white;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.greeting-button {
+  color: white;
+  background: transparent;
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.greeting-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.clock-title {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.greetingUser {
+  margin: -60px 0px 0px 0px;
+  font-size: 50px;
+}
+
+html {
+  height: 100%;
 }
 
 body {
@@ -44,36 +130,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.weather {
-  color: white;
-  font-size: 30px;
-}
-
-.greeting-title,
-.toDoForm-title {
-  color: white;
-  font-size: 50px;
-  font-weight: 400;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 5px;
-}
-
-input {
-  border: none;
-  background: transparent;
-  text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-  color: white;
-  cursor: text;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  border-bottom: 3px solid white;
-}
-
-input:focus {
-  outline: none;
+  height: 100%;
 }
 
 .wallpaper {

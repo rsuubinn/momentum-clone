@@ -16,7 +16,7 @@ function paintUser(text) {
   greetingUser.classList.add(SHOWING_CN);
   jsToDoForm.classList.add(SHOWING_CN);
   jsClock.classList.add(SHOWING_CN);
-  greetingUser.innerText = `Hello, ${text}`;
+  greetingUser.innerText = `Nice to meet you, ${text}.`;
 }
 
 function handleSubmit(event) {
